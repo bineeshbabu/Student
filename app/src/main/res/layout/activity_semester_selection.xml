@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phacsin.student.fragments.Fragment_1"
+    android:background="@color/grey"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_corner"
+            android:elevation="5sp"
+
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="vertical"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+            <com.phacsin.student.customfonts.NiceFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Semester"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/green"
+                android:layout_marginBottom="15sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+            <include
+                layout="@layout/test" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
