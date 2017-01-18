@@ -22,8 +22,6 @@
             android:theme="@style/MyMaterialTheme"/>
         <activity android:name=".ViewMarks"
             android:theme="@style/MyMaterialTheme"/>
-        <activity android:name=".SendMessage"
-            android:theme="@style/MyMaterialTheme"/>
         <activity android:name=".AttendanceCalender"
             android:theme="@style/MyMaterialTheme"/>
     </application>

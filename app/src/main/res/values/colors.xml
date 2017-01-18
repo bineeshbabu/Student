@@ -21,6 +21,7 @@
     <color name="dark_green">#0f9d58</color>
     <color name="grey_700">#455A64</color>
     <color name="spinner">#FAFAFA</color>
+    <color name="red">#F44336</color>
 
 
 </resources>
