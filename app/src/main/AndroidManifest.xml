@@ -22,7 +22,7 @@
             android:theme="@style/MyMaterialTheme"/>
         <activity android:name=".ViewMarks"
             android:theme="@style/MyMaterialTheme"/>
-        <activity android:name=".AttendanceCalender"
+        <activity android:name=".EditActivity"
             android:theme="@style/MyMaterialTheme"/>
     </application>
 

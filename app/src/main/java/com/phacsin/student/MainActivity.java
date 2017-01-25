@@ -25,7 +25,7 @@ import static com.phacsin.student.R.id.tabs;
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private ImageView img_send,img_logout;
+    private ImageView img_send,img_logout,img_edit;
     private int[] tabicons={R.drawable.atte_white,R.drawable.mark_white,R.drawable.not_white,R.drawable.atte_grey,R.drawable.mark_grey,R.drawable.not_grey};
 
     @Override
@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         img_send =(ImageView) findViewById(R.id.send_message);
+        img_edit =(ImageView) findViewById(R.id.edit_details);
+
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         img_send.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +60,32 @@ public class MainActivity extends AppCompatActivity {
                         mMaterialDialog.cancel();
                     }
                 });
+            }
+        });
+        img_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               /* final Dialog mMaterialDialog = new Dialog(MainActivity.this);
+                mMaterialDialog.setContentView(R.layout.activity_send_message_card);
+                HelveticaEditText editText = (HelveticaEditText) findViewById(R.id.typed_message);
+                mMaterialDialog.getWindow().setBackgroundDrawableResource(R.color.white);
+                mMaterialDialog.show();
+                HelveticaButton msg_send =(HelveticaButton) mMaterialDialog.findViewById(R.id.btn_send_msg);
+                HelveticaButton msg_cancel =(HelveticaButton) mMaterialDialog.findViewById(R.id.btn_cancel_msg);
+                msg_send.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mMaterialDialog.cancel();
+                    }
+                });
+                msg_cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mMaterialDialog.cancel();
+                    }
+                });*/
+                Intent edit=new Intent(getApplicationContext(),EditActivity.class);
+                startActivity(edit);
             }
         });
         tabLayout = (TabLayout) findViewById(tabs);

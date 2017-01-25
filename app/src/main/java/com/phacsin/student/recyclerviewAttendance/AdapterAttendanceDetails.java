@@ -1,6 +1,7 @@
 package com.phacsin.student.recyclerviewAttendance;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.phacsin.student.AttendanceCalender;
 import com.phacsin.student.R;
 import com.phacsin.student.recyclerview.DataModel;
 
@@ -72,8 +72,9 @@ public class AdapterAttendanceDetails extends RecyclerView.Adapter<AdapterAttend
         cardview1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(view.getContext(),AttendanceCalender.class);
-                view.getContext().startActivity(i);
+                /*Intent i= new Intent(view.getContext(),AttendanceCalender.class);
+                view.getContext().startActivity(i);*/
+                Snackbar.make(view, "Details updated soon ", Snackbar.LENGTH_LONG).show();
             }
         });
         textViewName.setText(dataSet.get(listPosition).getName());
